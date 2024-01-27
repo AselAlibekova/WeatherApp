@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <div class="img_section">
+        <div class="default_info">
+          <h2 class="current_day" id="currentDay"></h2>
+          <span class="current_date" id="currentDate"></span>
+          <div id="mapid" style="width: 100%; height: 300px;"></div>
+          <div class="currency-info">
+            <br>
+              <h3><b>currency rate</b></h3>
+              <p> <span id="usdRate">N/A</span></p>
+              <p> <span id="eurRate">N/A</span></p>
+              <p> <span id="kztRate">N/A</span></p>
+              <p> <span id="rubRate">N/A</span></p>
+          </div>
+
+        </div>
+      </div>
+      <div class="content_section">
+        <audio controls autoplay>
+          <source src="	https://live.radiospinner.com/saxophone-jazz-64" type="audio/mpeg">
+        </audio>
+        <form>
+          <input id="input" type="text" placeholder="Search City" class="input_field" />
+          <button type="submit" class="btn_search">Search</button>
+        </form>
+        <div class="weather-and-map-container">
+          <div class="weather-info">
+            <h2 class="weather__city">City Name</h2>
+            <div class="weather__details none">
+              <img class="weather__img" src="" alt="Weather Icon">
+              <p>Temperature:    <span class="weather__temp" id="temperature"></span></p>
+              <p>Humidity:       <span id="humidity"></span></p>
+              <p>Feels Like:     <span id="feels-like"></span></p>
+              <p>Wind Speed:     <span id="speed"></span></p>
+              <p>Pressure:       <span id="pressure"></span></p>
+              <p>Coordinates:    <span id="coordinates"></span></p>
+              <p>Country:        <span id="country"></span></p>
+          
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
